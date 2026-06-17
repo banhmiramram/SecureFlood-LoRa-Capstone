@@ -1,0 +1,90 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Espressif\frameworks\node_1\build\node_1.elf C:\Espressif\frameworks\node_1\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py' '-p' 'COM3'
+e�&&'�A%�Flash Siz�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 16 2026 15:02:11[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa48h ( 43592) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001aa70 vaddr=3ffb0000 size=02744h ( 10052) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001d1bc vaddr=40080000 size=02e5ch ( 11868) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1af24h (110372) map[0m
+[0;32mI (150) esp_image: segment 4: paddr=0003af4c vaddr=40082e5c size=0b494h ( 46228) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=000463e8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (187) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (197) app_init: Application information:[0m
+[0;32mI (201) app_init: Project name:     node_1[0m
+[0;32mI (205) app_init: App version:      1[0m
+[0;32mI (208) app_init: Compile time:     Jun 16 2026 15:01:55[0m
+[0;32mI (213) app_init: ELF file SHA256:  d802fdeb1...[0m
+[0;32mI (217) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (221) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (225) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (229) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (233) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (239) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 3FFB3070 len 0002CF90 (179 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (255) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 4008E2F0 len 00011D10 (71 KiB): IRAM[0m
+[0;32mI (267) spi_flash: detected chip: generic[0m
+[0;32mI (269) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (285) main_task: Started on CPU0[0m
+[0;32mI (295) main_task: Calling app_main()[0m
+[0;32mI (295) lora_crypto: Crypto ready (AES-128-CBC + HMAC-SHA256 truncated 8B)[0m
+[LoRa] Config gửi xong.
+[LoRa] Normal mode.
+[N1 LoRa] Read config (n=6): C0 BE EF 1A 18 44 
+[0;32mI (1095) ina219: INA219 init OK @0x40 (config=0x199F) [BAT_TYPE=1, INVERT=1][0m
+[0;32mI (1145) MAIN: Battery initial: 0.98V / 0% / +0.2mA / SOLAR=[0m
+[0;32mI (1145) data_filter: Init: threshold=5.0cm heartbeat=30000ms min_interval=5000ms[0m
+[N1] Hệ thống sẵn sàng.
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:140.99cm:0.98V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:146.00cm:0.98V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:151.14cm:0.97V:0%:SOLAR=:+0mA
+[0;32mI (21315) water_alarm: Level changed: BÌNH THƯỜNG → NGUY HIỂM[0m
+[0;32mI (21315) data_filter: Send: level changed 0→1[0m
+[Main] Sent encrypted (72 bytes) | NGUY HIỂM | L1:71.33cm:0.97V:0%:SOLAR=:+0mA
+[0;32mI (22635) water_alarm: Level changed: NGUY HIỂM → BÌNH THƯỜNG[0m
+[0;32mI (26395) data_filter: Send: level changed 1→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:148.07cm:0.98V:0%:SOLAR=:+0mA
+[0;33mW (28785) water_alarm: Sensor garbage: 3.9 cm (rejected #1)[0m
+[0;33mW (30985) water_alarm: Sensor garbage: 3.6 cm (rejected #11)[0m
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:10.55cm:0.97V:0%:SOLAR=:+0mA
+[0;33mW (33025) water_alarm: Sensor garbage: 3.6 cm (rejected #21)[0m
+[0;33mW (35025) water_alarm: Sensor garbage: 3.6 cm (rejected #31)[0m
+[0;32mI (35825) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (35825) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:6.55cm:0.97V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:54.52cm:0.98V:0%:SOLAR=:+0mA
+[0;32mI (60815) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (62645) water_alarm: Level changed: BÌNH THƯỜNG → NGUY HIỂM[0m
+[0;32mI (64255) data_filter: Send: level changed 2→1[0m
+[Main] Sent encrypted (72 bytes) | NGUY HIỂM | L1:58.04cm:0.98V:0%:SOLAR=:+0mA
+[0;32mI (68455) water_alarm: Level changed: NGUY HIỂM → KHẨN CẤP[0m
+[0;32mI (68455) data_filter: Send: level changed 1→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:9.88cm:0.98V:0%:SOLAR=:+0mA

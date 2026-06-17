@@ -1,0 +1,687 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Espressif\frameworks\node_2\build\node_2.elf C:\Espressif\frameworks\node_2\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py' '-p' 'COM6'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x155c
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fa4
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun 16 2026 16:26:21[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a00ch ( 40972) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=0001a034 vaddr=3fc8d800 size=01714h (  5908) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=0001b750 vaddr=40380000 size=048c8h ( 18632) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1e898h (125080) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003e8c0 vaddr=403848c8 size=08each ( 36524) load[0m
+[0;32mI (137) esp_image: segment 5: paddr=00047774 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (141) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (142) boot: Disabling RNG early entropy source...[0m
+[0;32mI (156) cpu_start: Unicore app[0m
+[0;32mI (164) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (164) cpu_start: Pro cpu start user code[0m
+[0;32mI (164) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (166) app_init: Application information:[0m
+[0;32mI (170) app_init: Project name:     node_2[0m
+[0;32mI (174) app_init: App version:      1[0m
+[0;32mI (177) app_init: Compile time:     Jun 16 2026 16:26:04[0m
+[0;32mI (182) app_init: ELF file SHA256:  82564f979...[0m
+[0;32mI (187) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (190) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (194) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (198) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (202) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (208) heap_init: At 3FC8FE70 len 00030190 (192 KiB): RAM[0m
+[0;32mI (214) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (220) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (226) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (231) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (263) main_task: Calling app_main()[0m
+[0;32mI (263) lora_crypto: Crypto ready (AES-128-CBC + HMAC-SHA256 truncated 8B)[0m
+[LoRa] Config gửi xong.
+[LoRa] Normal mode.
+[N2 LoRa] Read config (n=6): C0 BE EF 1A 18 44 
+[0;32mI (1073) ina219: INA219 init OK @0x40 (config=0x199F) [BAT_TYPE=1, INVERT=1][0m
+[0;32mI (1123) MAIN: Battery initial: 0.99V / 0% / -0.4mA / SOLAR=[0m
+[0;32mI (1123) data_filter: Init: threshold=5.0cm heartbeat=30000ms min_interval=5000ms[0m
+[N2] Hệ thống sẵn sàng.
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.46cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.83cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (33393) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (33853) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:18.61cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:37.59cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (51913) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (55753) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.08cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.75cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.66cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.59cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.04cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.38cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.92cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.87cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.82cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.83cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.49cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.81cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.72cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.35cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.95cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.36cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.40cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.78cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.88cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.90cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.71cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.88cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.85cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.78cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.47cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.87cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.28cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:215.37cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.79cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.78cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:38.23cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (15182653) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (15183853) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (92 bytes) | KHẨN CẤP | L2:173.90cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (15185063) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (15188853) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[Main] Sent encrypted (92 bytes) | KHẨN CẤP | L2:216.98cm:0.98V:0%:SOLAR=:-0mA
+[0;32mI (15190173) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (15194413) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:50.71cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:20.70cm:0.99V:0%:SOLAR=:-0mA
+[LoRa] Normal mode.
+[N2 LoRa] Read config (n=6): C0 BE EF 1A 18 44 
+[0;32mI (1073) ina219: INA219 init OK @0x40 (config=0x199F) [BAT_TYPE=1, INVERT=1][0m
+[0;32mI (1123) MAIN: Battery initial: 1.00V / 0% / -0.0mA / SOLAR=[0m
+[0;32mI (1123) data_filter: Init: threshold=5.0cm heartbeat=30000ms min_interval=5000ms[0m
+[N2] Hệ thống sẵn sàng.
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:15.11cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (2313) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (3463) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:54.31cm:1.00V:0%:SOLAR=:-0mA
+[LoRa] Normal mode.
+[N2 LoRa] Read config (n=6): C0 BE EF 1A 18 44 
+[0;32mI (1073) ina219: INA219 init OK @0x40 (config=0x199F) [BAT_TYPE=1, INVERT=1][0m
+[0;32mI (1123) MAIN: Battery initial: 1.04V / 0% / -0.4mA / SOLAR=[0m
+[0;32mI (1123) data_filter: Init: threshold=5.0cm heartbeat=30000ms min_interval=5000ms[0m
+[N2] Hệ thống sẵn sàng.
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:66.46cm:1.04V:0%:SOLAR=:-0mA
+[0;32mI (2213) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (3363) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:53.87cm:1.03V:0%:SOLAR=:-0mA
+[0;33mW (6503) water_alarm: Sensor garbage: 3.6 cm (rejected #1)[0m
+[Main] Sent encrypted (92 bytes) | KHẨN CẤP | L2:217.08cm:1.02V:0%:SOLAR=:-0mA
+[0;32mI (10093) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (14153) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.56cm:1.01V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:27.53cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (30963) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (32143) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:39.00cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (33603) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (37203) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.46cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:31.04cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (65383) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (66583) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (92 bytes) | KHẨN CẤP | L2:217.05cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (67353) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (71673) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.55cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.56cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.55cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.01cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.15cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.68cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.46cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.65cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.68cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.05cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.01cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.10cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.67cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.08cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.60cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.62cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.55cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.68cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.06cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.59cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.05cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.65cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.17cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:33.31cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.46cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.59cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.10cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.98cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.53cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.51cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.03cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.82cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.93cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (1239153) data_filter: Stats: sent=50 dropped_rate=945[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.38cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.34cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.84cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.36cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.77cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.72cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.22cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.27cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (1455203) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (1455203) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:72.08cm:0.99V:0%:SOLAR=:+0mA
+[0;32mI (1456633) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (1460473) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.10cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.43cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.02cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.01cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.99cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.55cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.60cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.50cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.39cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.34cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.50cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.89cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.27cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.30cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.91cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.98cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.53cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.44cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.41cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.39cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.41cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.46cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.41cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.34cm:1.03V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.34cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.84cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.34cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.34cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.22cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.80cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.26cm:0.95V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.22cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.20cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.68cm:0.96V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.82cm:1.03V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.27cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.34cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.29cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.39cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (2698883) data_filter: Stats: sent=100 dropped_rate=1943[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.23cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.23cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.36cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.89cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.27cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.34cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.29cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.74cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.27cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.29cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.65cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.39cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.38cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.89cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.51cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.43cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.91cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.44cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.43cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.29cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.87cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.46cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.99cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.13cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.98cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.93cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.84cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.98cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.46cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:216.91cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.80cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.20cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.89cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.14cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.47cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.01cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.23cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.70cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.10cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.77cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.77cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.84cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.35cm:0.96V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.78cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.25cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.47cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.77cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (4209943) data_filter: Stats: sent=150 dropped_rate=2943[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.46cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.87cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.94cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.89cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.35cm:0.97V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.39cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.05cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.94cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.56cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.13cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.63cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.51cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.04cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.63cm:0.97V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.63cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.94cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.66cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.63cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.65cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.56cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.01cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.33cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.51cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.47cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.99cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.06cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.10cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.65cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.68cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.18cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.61cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.10cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (5720563) data_filter: Stats: sent=200 dropped_rate=3943[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.06cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.59cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.35cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:34.47cm:1.01V:0%:SOLAR=:-0mA
+[0;32mI (6011273) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (6012453) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:53.23cm:1.01V:0%:SOLAR=:-0mA
+[0;32mI (6013783) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (6017623) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.90cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.47cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.17cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.41cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.51cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.15cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.27cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.70cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.18cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.29cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.17cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.11cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.97cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.17cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.71cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.68cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.56cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.04cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.56cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.89cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.30cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.92cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.10cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.94cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (7165983) data_filter: Stats: sent=250 dropped_rate=4931[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.89cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.42cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.92cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.01cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.46cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.06cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.07cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.17cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.83cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.94cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.98cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.35cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.29cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.29cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.30cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.46cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.35cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.99cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.49cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.15cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.58cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.92cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.11cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.73cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.91cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.42cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.91cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.83cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.42cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.59cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.54cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.01cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.59cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.61cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.99cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.51cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.47cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.46cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.99cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.90cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (8675973) data_filter: Stats: sent=300 dropped_rate=5931[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.99cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.39cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.35cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.93cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.30cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:41.88cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.29cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.35cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.82cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.82cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.41cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.82cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.25cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.17cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.18cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.74cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:32.72cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (9151993) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (9153143) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:19.45cm:0.99V:0%:SOLAR=:+1mA
+[0;32mI (9156553) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (9158473) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.35cm:0.99V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.01cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.19cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.89cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.80cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.61cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.66cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.66cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.50cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.38cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.44cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.39cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.84cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.29cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.25cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.30cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.08cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.65cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.65cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.66cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.35cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.25cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.59cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.59cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.49cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.99cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.47cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.05cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.03cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (10094263) data_filter: Stats: sent=350 dropped_rate=6920[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.05cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.95cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.01cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.42cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.41cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.94cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.32cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.34cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.15cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:32.38cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (10357673) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (10358823) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:32.02cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (10361363) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (10364243) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.22cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.27cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.72cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.65cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.67cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:218.18cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:217.74cm:1.00V:0%:SOLAR=:-0mA
+[0;32mI (10547483) water_alarm: Level changed: BÌNH THƯỜNG → KHẨN CẤP[0m
+[0;32mI (10547483) data_filter: Send: level changed 0→2[0m
+[Main] Sent encrypted (72 bytes) | KHẨN CẤP | L2:27.99cm:0.98V:0%:SOLAR=:+1mA
+[0;32mI (10550243) water_alarm: Level changed: KHẨN CẤP → BÌNH THƯỜNG[0m
+[0;32mI (10553073) data_filter: Send: level changed 2→0[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.02cm:0.99V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.93cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.52cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.27cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.95cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.98cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.36cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.45cm:0.97V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.36cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.88cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.29cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.26cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.26cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.78cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.79cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.86cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.27cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.24cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.77cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.34cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.38cm:0.94V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.22cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:219.88cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.29cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.25cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.66cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.29cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.63cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.24cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.34cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.30cm:0.99V:0%:SOLAR=:-0mA
+[0;32mI (11461893) data_filter: Stats: sent=400 dropped_rate=7897[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.36cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.42cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.07cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.30cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.10cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.37cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.17cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.80cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.32cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:220.99cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.89cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.48cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.39cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.32cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.05cm:0.98V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.32cm:1.00V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.85cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.84cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.42cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.82cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.25cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.23cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.37cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.84cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.37cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.78cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.77cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.78cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.86cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.20cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.93cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.59cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.18cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.30cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.29cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.11cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.70cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.27cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.72cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.90cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.72cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.16cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.54cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.84cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.18cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.62cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.97cm:0.98V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.59cm:1.00V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.82cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.61cm:0.97V:0%:SOLAR=:-0mA
+[0;32mI (12571103) data_filter: Stats: sent=450 dropped_rate=8897[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.80cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.62cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.21cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.77cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.95cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.61cm:0.98V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.75cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.95cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.16cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.05cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.30cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.94cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:224.00cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.50cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.32cm:0.98V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.53cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:223.19cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.07cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:223.19cm:0.99V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.05cm:1.00V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.76cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.14cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.20cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.41cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.80cm:0.99V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.43cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:223.09cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.95cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.61cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.41cm:0.99V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.62cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.98cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.78cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.91cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:223.53cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.95cm:0.99V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:223.09cm:1.00V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.18cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (72 bytes) | BÌNH THƯỜNG | L0:39.36cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.08cm:0.99V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.88cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.16cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.82cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.72cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.82cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.61cm:1.00V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.95cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.20cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.73cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.38cm:0.98V:0%:SOLAR=:+0mA
+[0;32mI (13128043) data_filter: Stats: sent=500 dropped_rate=9897[0m
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.30cm:0.99V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.90cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:223.04cm:0.99V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.36cm:0.99V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:223.43cm:0.98V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.34cm:0.98V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.13cm:1.00V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.86cm:1.00V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.14cm:1.01V:0%:SOLAR=:+0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.88cm:0.98V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:224.72cm:1.00V:0%:SOLAR=:+1mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:232.93cm:1.01V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.64cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.00cm:1.00V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:221.84cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:233.50cm:0.98V:0%:SOLAR=:-0mA
+[Main] Sent encrypted (92 bytes) | BÌNH THƯỜNG | L0:222.21cm:1.01V:0%:SOLAR=:-0mA
+[
