@@ -95,7 +95,7 @@ Chi tiết trong `GITHUB_PUSH_GUIDE.md`:
 git init
 git branch -M main
 git config user.name "Nguyễn Thái Hiệp"
-git config user.email "banhmirampam@gmail.com"
+git config user.email "thaiiihiepp@gmail.com"
 
 # Thêm remote
 git remote add origin https://github.com/banhmirampam/SecureFlood-LoRa-Capstone.git
