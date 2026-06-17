@@ -45,10 +45,10 @@ The SecureFlood-LoRa system consists of two distinct hardware platforms:
 - **Package**: QFN 48-pin (soldered on ceramic PCB)
 
 > ![alt text](image.png) 
-> Source: `Báo_cáo_ĐATN_Nguyễn_Thái_Hiệp.docx` → Chương 2.3.2.2 (page 15)
+> 
 
 > ![alt text](image-1.png)
-> Source: Báo cáo → page 16
+> 
 
 ---
 
@@ -73,7 +73,7 @@ The SecureFlood-LoRa system consists of two distinct hardware platforms:
   - Option (OPTION) = 0x44 (420–450 MHz, fixed transmission, default)
 
 > ![alt text](image-2.png)
-> Source: Báo cáo → page 16
+> 
 
 ---
 
@@ -90,7 +90,7 @@ The SecureFlood-LoRa system consists of two distinct hardware platforms:
 - **Interface**: GPIO TRIG (pulse input), GPIO ECHO (pulse width)
 
 > ![alt text](image-3.png)
-> Source: Báo cáo → page 19
+> 
 
 #### Battery Monitor (INA219)
 - **Measurement**: Voltage (0–26V), Current (±3.2A)
@@ -102,7 +102,7 @@ The SecureFlood-LoRa system consists of two distinct hardware platforms:
 - **Power**: <1 mA quiescent current
 
 > ![alt text](image-4.png)
-> Source: Báo cáo → page 18
+> 
 
 ---
 
@@ -116,7 +116,7 @@ The SecureFlood-LoRa system consists of two distinct hardware platforms:
 - **Mounting**: South-facing, 45° angle for optimum year-round collection
 
 > ![alt text](image-5.png)
-> Source: Báo cáo → page 13
+> 
 
 #### Charging Circuit (TP4056)
 - **Type**: Integrated Li-ion charger + boost converter
@@ -131,7 +131,7 @@ The SecureFlood-LoRa system consists of two distinct hardware platforms:
 - **Efficiency**: 92% (low heat dissipation)
 
 > ![alt text](image-6.png)
-> Source: Báo cáo → page 13
+> 
 
 #### Battery Pack
 - **Chemistry**: Lithium-ion (Li-ion) 18650 cylindrical cells
@@ -152,7 +152,7 @@ Net balance:      +7 Ah/day → always positive in daylight
 ```
 
 > ![alt text](image-7.png) 
-> Source: Báo cáo → page 14
+> 
 
 ---
 
@@ -167,7 +167,7 @@ Net balance:      +7 Ah/day → always positive in daylight
 - **Mount**: Vertical on mast or pole (LoRa polarization-sensitive)
 
 > ![alt text](image-8.png) 
-> Source: Báo cáo → page 17
+> 
 
 #### Display (Central Hub Only)
 - **Type**: TFT-LCD ILI9341 driver
@@ -180,7 +180,7 @@ Net balance:      +7 Ah/day → always positive in daylight
 - **Response**: <50ms refresh rate
 
 > ![alt text](image-9.png)
-> Source: Báo cáo → page 20
+> 
 
 #### Buzzer (5V Active)
 - **Type**: Electromechanical piezo buzzer
@@ -191,7 +191,7 @@ Net balance:      +7 Ah/day → always positive in daylight
 - **Drive**: GPIO output (no additional amplifier needed)
 
 > ![alt text](image-10.png)  
-> Source: Báo cáo → page 20
+> 
 
 #### LED Indicators (Sensor Node)
 - **Type**: 5mm diffuse RGB common-anode
@@ -206,7 +206,7 @@ Net balance:      +7 Ah/day → always positive in daylight
 - RED (GPIO 25) → Critical (distance < 50 cm)
 
 > ![alt text](image-11.png) 
-> Source: Báo cáo → page 21
+> 
 
 ---
 
@@ -215,7 +215,7 @@ Net balance:      +7 Ah/day → always positive in daylight
 ### Block Diagram
 
 > ![alt text](image-12.png) 
-> Source: Báo cáo → Chương 3 (page 51) - Schematic of sensor node with all signal connections
+> 
 
 ### GPIO Pin Assignment (Sensor Node)
 
@@ -235,7 +235,7 @@ Net balance:      +7 Ah/day → always positive in daylight
 | **Buzzer** | GPIO 14 | OUT | Audio alarm (on/off) | 3.3V |
 
 > ![alt text](image-13.png) 
-> Source: Báo cáo → page 51 - Detailed wiring diagram showing all GPIO connections
+> 
 
 ### Power Rail Topology (Sensor Node)
 
@@ -298,7 +298,7 @@ The sensor node PCB is a **2-layer FR4 board** (100mm × 80mm) with:
    - Charging circuit (TP4056) isolated from logic ground via star-ground
 
 > ![alt text](image-14.png)
-> Source: Báo cáo → page 71 - Complete PCB layout with trace routing and via placement
+> 
 
 ---
 
@@ -307,7 +307,7 @@ The sensor node PCB is a **2-layer FR4 board** (100mm × 80mm) with:
 ### Block Diagram
 
 > ![alt text](image-15.png) 
-> Source: Báo cáo → Chương 3 (page 53) - Schematic of central hub with LCD, Wi-Fi, display I/O
+> 
 
 ### GPIO Pin Assignment (Central Hub)
 
@@ -328,7 +328,7 @@ The sensor node PCB is a **2-layer FR4 board** (100mm × 80mm) with:
 | **BTN Next Page** | GPIO 39 | IN (ADC) | Cycle LCD pages | 3.3V |
 
 > ![alt text](image-16.png) 
-> Source: Báo cáo → page 54 - Central hub wiring diagram with display connections
+> 
 
 ### Power Rail Topology (Central Hub)
 
@@ -372,7 +372,7 @@ The central hub PCB is a **2-layer board** (150mm × 100mm) with:
    - Left edge: Button matrix (3-button input with pull-ups)
 
 > ![alt text](image-17.png)  
-> Source: Báo cáo → page 80 - Central hub PCB layout with SPI trace routing for LCD
+> 
 
 ---
 
