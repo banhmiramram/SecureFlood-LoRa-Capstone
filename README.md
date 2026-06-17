@@ -3,7 +3,7 @@
 Ba phần chính của hệ thống giám sát lũ lụt sử dụng công nghệ LoRa với bảo mật dữ liệu:
 
 - **firmware/** : Firmware cho ESP32 (node cảm biến và hub trung tâm), xử lý đọc cảm biến ultrasonic HC-SR04, mã hóa AES-128-CBC + HMAC-SHA256, gửi dữ liệu qua LoRa 433 MHz.
-- **hardware/** : Thiết kế mạch in PCB, sơ đồ nguyên lý (schematic), BOM, hướng dẫn lắp ráp và danh sách linh kiện.
+- **hardware/** : Thiết kế mạch in PCB, sơ đồ nguyên lý (schematic), BOM (Bill of Materials), hướng dẫn lắp ráp và danh sách linh kiện.
 - **docs/** : Tài liệu kiến trúc hệ thống, hướng dẫn triển khai, mô hình bảo mật và API.
 
 Hệ thống dùng LoRa để truyền dữ liệu khoảng cách từ 1 km (không vật cản) và 500m (đô thị), với độ chính xác đo mực nước <1 cm. Dữ liệu được mã hóa AES-128-CBC và xác thực bằng HMAC-SHA256, có cơ chế chống tấn công phát lại (anti-replay) bằng sliding window. Hệ thống cảm biến được cấp điện bằng pin mặt trời và pin lithium-ion, có thời gian hoạt động ≥40 giờ không cần mặt trời.
