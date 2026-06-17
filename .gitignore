@@ -1,0 +1,194 @@
+# SecureFlood-LoRa-Capstone .gitignore
+# Exclude build artifacts, binaries, IDE files, and sensitive data
+
+# ==========================================
+# ESP-IDF Build Output & Configuration
+# ==========================================
+firmware/*/build/
+firmware/*/.vscode/
+firmware/*/sdkconfig.old
+firmware/*/sdkconfig
+firmware/*/.idf_build_apps_config.json
+firmware/**/*.manifest
+
+# ==========================================
+# Compiled Binaries & Objects
+# ==========================================
+*.o
+*.a
+*.elf
+*.bin
+*.map
+*.pyc
+*.so
+*.dylib
+*.dll
+*.exe
+
+# ==========================================
+# CMake & Build System
+# ==========================================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+*.properties
+
+# ==========================================
+# IDE & Editor Files
+# ==========================================
+.vscode/
+.vscode/*
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.project
+.cproject
+.settings/
+
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.env
+.venv
+
+# ==========================================
+# Sensitive & Secret Files (⚠️ NEVER COMMIT!)
+# ==========================================
+firmware/node_1/main/lora_crypto_keys.h
+firmware/receiver/main/http_hmac_keys.h
+firmware/receiver/main/wifi_credentials.h
+*.key
+*.pem
+*.crt
+.env.local
+.env.*.local
+secrets.json
+config.private.json
+
+# ==========================================
+# Test & Temporary Files
+# ==========================================
+*.log
+*.tmp
+*.bak
+*.swp
+temp/
+tmp/
+.pytest_cache/
+.coverage
+htmlcov/
+*.csv
+
+# ==========================================
+# IDE-specific folders
+# ==========================================
+.clang_complete
+.gcc-flags.json
+.ycm_extra_conf.py
+.ccls-cache/
+compile_commands.json
+
+# ==========================================
+# OS-specific Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+.Thumbs.db
+
+# ==========================================
+# Hardware Design Files (Optional - EDA)
+# ==========================================
+# Uncomment if not storing hardware designs in git
+# hardware/schematics/*.kicad_sch-bak
+# hardware/pcb/*.kicad_pcb-bak
+# hardware/pcb/*.bak
+# hardware/**/*.kicad_pcb.bak
+
+# ==========================================
+# Documentation Build Output
+# ==========================================
+docs/_build/
+docs/.doctrees/
+site/
+*.md.bak
+
+# ==========================================
+# Node Modules & Package Managers
+# ==========================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ==========================================
+# Docker & Container Files
+# ==========================================
+.docker*
+docker-compose.override.yml
+
+# ==========================================
+# VSCode ESP-IDF Extension
+# ==========================================
+.esp_idf_tools/
+.espressif/
+
+# ==========================================
+# Archives & Compressed Files
+# ==========================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ==========================================
+# Debugging & Coverage
+# ==========================================
+.gdbinit
+.lldbinit
+*.gdb
+*.o.debug
+
+# Keep (DO NOT ignore):
+# ==========================================
+# These files SHOULD be committed:
+!.gitkeep
+!firmware/**/.gitkeep
+!hardware/**/.gitkeep
+!docs/**/.gitkeep
+!scripts/**/.gitkeep
+!.github/workflows/
