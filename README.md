@@ -1,6 +1,6 @@
 # SecureFlood-LoRa Capstone Project
 
-Repo này chứa ba phần chính của hệ thống giám sát lũ lụt sử dụng công nghệ LoRa với bảo mật dữ liệu:
+Ba phần chính của hệ thống giám sát lũ lụt sử dụng công nghệ LoRa với bảo mật dữ liệu:
 
 - **firmware/** : Firmware cho ESP32 (node cảm biến và hub trung tâm), xử lý đọc cảm biến ultrasonic HC-SR04, mã hóa AES-128-CBC + HMAC-SHA256, gửi dữ liệu qua LoRa 433 MHz.
 - **hardware/** : Thiết kế mạch in PCB, sơ đồ nguyên lý (schematic), BOM, hướng dẫn lắp ráp và danh sách linh kiện.
