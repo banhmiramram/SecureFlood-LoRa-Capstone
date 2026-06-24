@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Xzzm8pSJ2Ty5PO-fjyCe">
-    <mxGraphModel dx="4713" dy="2650" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="2571" dy="1445" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -290,8 +290,10 @@
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=30;" value="Phân loại với biên&lt;div&gt;5cm&lt;/div&gt;" vertex="1">
           <mxGeometry height="136" width="290" x="6491" y="1326" as="geometry" />
         </mxCell>
-        <mxCell id="dHOnNA1qFKyTxo9gN7e2-77" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-61" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="dHOnNA1qFKyTxo9gN7e2-62" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="dHOnNA1qFKyTxo9gN7e2-77" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-61" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="6369" y="1618.0000000000005" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-78" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-61" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="dHOnNA1qFKyTxo9gN7e2-64" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -299,19 +301,19 @@
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-61" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=30;" value="Kiếm tra biến mới bằng&lt;div&gt;giá trị biến cũ không ?&lt;/div&gt;" vertex="1">
           <mxGeometry height="278" width="470" x="6401" y="1479" as="geometry" />
         </mxCell>
-        <mxCell id="dHOnNA1qFKyTxo9gN7e2-83" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-62" style="edgeStyle=none;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;">
+        <mxCell id="dHOnNA1qFKyTxo9gN7e2-83" edge="1" parent="1" style="edgeStyle=none;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="6224" y="2074" />
             </Array>
+            <mxPoint x="6224" y="1686" as="sourcePoint" />
             <mxPoint x="6628" y="2074" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dHOnNA1qFKyTxo9gN7e2-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=30;" value="Reset biến đếm về 0" vertex="1">
-          <mxGeometry height="136" width="290" x="6079" y="1550" as="geometry" />
-        </mxCell>
-        <mxCell id="dHOnNA1qFKyTxo9gN7e2-79" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-64" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="dHOnNA1qFKyTxo9gN7e2-66" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="dHOnNA1qFKyTxo9gN7e2-79" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-64" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="6921" y="1923.6744186046512" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-80" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-64" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="dHOnNA1qFKyTxo9gN7e2-67" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -319,16 +321,14 @@
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-64" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=30;" value="Kiếm tra biến đếm đã&lt;div&gt;lớn hơn 5 chưa ?&lt;/div&gt;" vertex="1">
           <mxGeometry height="278" width="470" x="6401" y="1786" as="geometry" />
         </mxCell>
-        <mxCell id="dHOnNA1qFKyTxo9gN7e2-85" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-66" style="edgeStyle=none;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;">
+        <mxCell id="dHOnNA1qFKyTxo9gN7e2-85" edge="1" parent="1" style="edgeStyle=none;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="7066" y="2069" />
             </Array>
+            <mxPoint x="7066" y="1991" as="sourcePoint" />
             <mxPoint x="6642.444444444443" y="2075.222222222222" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="dHOnNA1qFKyTxo9gN7e2-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=30;" value="Tăng đếm++" vertex="1">
-          <mxGeometry height="136" width="290" x="6921" y="1855" as="geometry" />
         </mxCell>
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-81" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-67" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -366,7 +366,7 @@
           <mxGeometry height="30" width="60" x="6675" y="2041" as="geometry" />
         </mxCell>
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-91" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;fontStyle=1" value="&lt;font&gt;Chưa&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="6847" y="1947" as="geometry" />
+          <mxGeometry height="30" width="60" x="6849" y="1880" as="geometry" />
         </mxCell>
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-106" edge="1" parent="1" source="dHOnNA1qFKyTxo9gN7e2-92" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="dHOnNA1qFKyTxo9gN7e2-93" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -439,6 +439,12 @@
         </mxCell>
         <mxCell id="dHOnNA1qFKyTxo9gN7e2-122" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fontSize=30;" value="&lt;div&gt;&lt;font&gt;Cập nhật trạng thái&lt;br&gt;LED &amp;amp; còi&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="141" width="310" x="5293" y="1717" as="geometry" />
+        </mxCell>
+        <mxCell id="dHOnNA1qFKyTxo9gN7e2-123" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fontSize=30;" value="Tăng đếm++" vertex="1">
+          <mxGeometry height="151" width="310" x="6916" y="1840" as="geometry" />
+        </mxCell>
+        <mxCell id="dHOnNA1qFKyTxo9gN7e2-124" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fontSize=30;" value="Reset biến đếm&lt;div&gt;về 0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="151" width="310" x="6068" y="1537" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
